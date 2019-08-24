@@ -1,0 +1,28 @@
+<GridLayout>
+    canvas.before:
+        BorderImage:
+            # BorderImage behaves like the CSS BorderImage
+            border: 10, 10, 10, 10
+            source: '../img/drop.png'
+            pos: self.pos
+
+
+<SevenGui>:
+    label: label
+
+    GridLayout:
+        size_hint: .9, .9
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        rows:2
+
+    Label:
+        id: label
+        text_size: self.size
+        text: '[color=00FF6F]Drop your file here[/color]'
+        markup: True
+
+
+
+
+
+
